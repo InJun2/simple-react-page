@@ -1,0 +1,89 @@
+.header{
+    top:0;
+    width: 1600px;
+    height: 114px;
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    border-bottom: 1.5px solid rgb(168, 163, 163);
+}
+
+.logo{
+    position: line;
+    width: 80px;
+    height: 80px;
+    margin-top: 5px;
+}
+
+.logo:hover{
+    transition: 0.2s;
+    opacity: 0.2;
+}
+
+.main-text{
+    font-family: 'BMHP';
+    font-size: 50px;
+    padding-top:10px;
+    margin-left: 40px;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 40px;
+    margin-top: 50px;
+    border-top: 1.5px solid rgb(168, 163, 163);
+}
+
+.navbar .navi-item{
+    flex-grow: 1;
+    color: gray;
+    font-family: "BMHA";
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar :hover{
+    color: white;
+    background-color: rgb(234, 244, 247);
+}
+
+.header_toolbar{
+    width: 1600px;
+    text-align: end;
+    position: absolute;
+    font-size: 18px;
+    font-family: "BMHP";
+    color: rgb(168, 163, 163);
+}
+
+.header_toolbar a{
+    text-decoration: none;
+    color: rgb(168, 163, 163);
+}
+
+.header_toolbar a:hover{
+    transition: 0.2s;
+    color: rgb(44, 44, 44);
+}
+
+@media screen and (max-width:768px){
+    .header{
+        width: 90%;
+        height: auto;
+    }
+    .header_toolbar{
+        width: max-content;
+        top:110px;
+        right:0;
+        margin-right: 5%;
+    }
+
+    .navbar{
+        width: 0%;
+        overflow: hidden;
+    }
+}

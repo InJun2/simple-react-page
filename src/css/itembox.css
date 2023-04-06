@@ -1,0 +1,47 @@
+.itembox{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+
+.itembox_img{
+    width: 100%;
+    height: 70%;
+    border-top: 2px solid rgb(223, 220, 220);
+    border-bottom: 2px solid rgb(223, 220, 220);
+    overflow: hidden;
+}
+
+.itembox_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.itembox_img img:hover{
+    opacity: 0.6;
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+
+.itembox_title{
+    width: 100%;
+    height: 12%;
+    padding: 6px;
+    font-size: 28px;
+    font-family: "BMY";
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.itembox_content{
+    width: 100%;
+    height: 18%;
+    padding: 8px;
+    font-size: 18px;
+    font-family: "BMHP";
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

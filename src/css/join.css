@@ -1,0 +1,177 @@
+.join_container{
+    width: 1400px;
+    height: auto;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.join_container .join_box{
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 2px rgb(174, 163, 175);
+    margin: auto;
+    overflow: hidden;
+}
+
+.join_box .join_content{
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.join_content .join_title{
+    padding-left: 5px;
+    font-size: 20px;
+    font-family: "BMHP";
+    display: block;
+}
+
+.join_content span.join_error_text{
+    color: rgb(245, 62, 62);
+    font-size: 15px;
+    font-family: "BMHA";
+}
+
+.join_input_row{
+    margin-bottom: 20px;
+}
+
+.join_input_row span{
+    display: block;
+}
+
+.join_input_row span.pull_input_span, .join_input_row span.input_span_readonly{
+    width: 100%;
+    height: 50px;
+    border: 2.5px solid gray;
+    padding: 10px;
+}
+
+span.input_span_readonly, .input_span_readonly input{
+    background-color: rgb(218, 218, 218);
+}
+
+.join_input_row div.join_address{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.join_input_row div.join_birthday_div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.join_input_row .join_birthday_div span{
+    width: 32%;
+    height: 50px;
+    border: 2.5px solid gray;
+    padding: 5px;
+}
+
+.join_content span:focus-within, .join_content span:focus-within{
+    transition: 0.6s;
+    border: 2.5px solid rgb(138, 252, 32);
+}
+
+.join_content input, .join_content .pull_input_span select{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-family: "BMJ";
+    border: 0;
+    padding-left: 15px;
+    padding-right: 50px;
+    outline: none;
+}
+
+.join_content input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.join_content input::placeholder{
+    font-size: 15px;
+    font-family: "BMHP";
+    color: rgb(199, 199, 199);
+}
+
+.join_content input[type=password]{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.join_address span:nth-child(1){
+    width: 78%;
+    height: 50px;
+    border: 2.5px solid gray;
+    border-right: 0;
+    padding: 10px;
+    margin-bottom:3px
+}
+
+.join_address button{
+    width: 22%;
+    height: 50px;
+    font-family: "BMJ";
+    border: 2.5px solid gray;
+    padding: 10px;
+    margin-bottom: 3px;
+}
+
+.join_address button:active{
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5), -4px -4px 6px 0 rgba(255,255,255,.5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+.join_address div.addressPopup{
+    margin-top: 15px;
+}
+
+.join_address button.postCode_btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: right;
+}
+
+.join_button_row{
+    width: 100%;
+    height: 70px;
+    border: 0;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    background-color: rgb(197, 197, 197);
+}
+
+.join_button_row button{
+    flex:1;
+    color: white;
+    background: none;
+    border: 0;
+    text-align: center;
+    font-size: 40px;
+    font-family: "BMHP";
+}
+
+.join_button_row button:hover{
+    transition: 0.4s;
+    opacity: 0.6;
+    font-size: 55px;
+}
+
+.join_content input:-webkit-autofill,
+.join_content input:-webkit-autofill:hover, 
+.join_content input:-webkit-autofill:focus, 
+.join_content input:-webkit-autofill:active {
+    box-shadow: 0 0 0 30px white inset !important;
+}   /* input 자동 완성 백그라운드 색상 제거 */

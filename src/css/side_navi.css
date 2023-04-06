@@ -1,0 +1,75 @@
+.navigation {   /* https://codepen.io/SitePoint/pen/LYQaLV 참고*/
+    width: 300px;
+    position: fixed;
+    top: 140px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+
+    list-style: none;
+    background: #d8c7c7;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+.navigation li {
+    display: flex;
+    flex-direction: column;
+    background-color: #d8c7c7;
+    width: 280px;
+}
+
+.navigation li a {
+    display: inline-block;
+    padding: 1em;
+    color: white;
+    font-family: "BMJ";
+    font-size: 1.2em;
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+    transition: color 0.2s, background 0.5s;
+}
+
+.navigation li a:hover {
+    color: #7fc9db;
+}
+
+.nav-trigger {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+    position: fixed;
+    left: 40px; top: 30px;
+    z-index: 2;
+}
+
+label[for="nav-trigger"]:hover{
+    color:aquamarine;
+}
+
+.toggle-menu-icon{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.nav-trigger + label {
+    transition: left 0.2s;
+}
+
+
+.show-menu{
+    left : 0px;   
+    transition: 1s;
+}
+
+.hide-menu{
+    left: -300px;
+    transition: 1s;
+}
